@@ -16,7 +16,7 @@ class Connection(object):
 
     @classmethod
     def _get_instance_id(cls, host=DEFAULT_HOST, port=DEFAULT_PORT,
-                         table_prefix=None, table_prefix_separator='_'):
+                         table_prefix=None, table_prefix_separator='_', **_kwargs):
         if table_prefix:
             table_prefix += table_prefix_separator
         else:
